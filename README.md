@@ -110,3 +110,7 @@ Non. Video1Cam fonctionne entièrement hors ligne.
 ## Contribuer
 
 Pour compiler l'application vous-même, lancer les tests ou publier une nouvelle version, consultez [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+Video1Cam est distribué sous [licence MIT](LICENSE) : libre d'utilisation, de modification et de redistribution, y compris dans un cadre commercial.
