@@ -107,23 +107,6 @@ C'est une mesure de sécurité de macOS Sequoia. Elle s'applique à toutes les a
 **Mes vidéos sont-elles envoyées quelque part ?**
 Non. Video1Cam fonctionne entièrement hors ligne.
 
-## Compiler depuis les sources
+## Contribuer
 
-Il faut les *Command Line Tools* d'Apple (`xcode-select --install`). Xcode n'est pas nécessaire.
-
-```bash
-./build.sh --install
-```
-
-Cette commande compile l'application (Intel et Apple Silicon) et l'installe dans `/Applications`. Les autres commandes utiles :
-
-- `./build.sh --test` lance d'abord les tests du moteur d'enregistrement ;
-- `./scripts/package.sh` produit le fichier `dist/Video1Cam-x.y.z.zip` à publier.
-
-**Publier une version** : poussez une étiquette, par exemple `git tag v1.0.0 && git push --tags`. GitHub Actions compile l'application et crée la version avec le zip téléchargeable.
-
-```
-Sources/RecorderCore/   moteur : écriture vidéo, pause, synchro audio, conversion MP4
-Sources/Video1Cam/      application : capture d'écran, bulle caméra, sélection de zone, interface
-Sources/CoreTests/      tests du moteur (synchro image/son, pauses, reprise après crash)
-```
+Pour compiler l'application vous-même, lancer les tests ou publier une nouvelle version, consultez [CONTRIBUTING.md](CONTRIBUTING.md).
